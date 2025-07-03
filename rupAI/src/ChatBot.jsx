@@ -14,7 +14,7 @@ import {
 
 // --- API Configuration ---
 // It's good practice to have a base URL for your API.
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://rupai-backend.onrender.com/api" });
 
 const ChatBot = () => {
   const [users, setUsers] = useState([]);
