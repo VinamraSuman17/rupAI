@@ -25,7 +25,7 @@ const Dashboard = () => {
   const [animatedSavings, setAnimatedSavings] = useState(0);
 
   // Mock data
-  const userName = "Vinamra";
+  const userName = "User";
   const userData = {
     balance: 125000,
     currentSavings: 15000,

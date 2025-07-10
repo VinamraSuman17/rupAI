@@ -14,7 +14,7 @@ const rupAI = () => {
 
   // Mock user data
   const [userData, setUserData] = useState({
-    balance: 45670,
+    balance: 125000,
     monthlyIncome: 85000,
     savingsGoal: 25000,
     currentSavings: 18500,

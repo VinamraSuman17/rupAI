@@ -68,18 +68,18 @@ const seedDB = async () => {
         console.log('Old data cleared.');
 
         // --- Create User 1: Rohan (1 Year of Data) ---
-        const userOne = new User({ name: 'Rohan', email: 'rohan@example.com' });
+        const userOne = new User({ name: 'User1', email: 'User1@example.com' });
         await userOne.save();
         const userOneTransactions = generateTransactions(userOne._id, 12);
         await Transaction.insertMany(userOneTransactions);
-        console.log(`Created User Rohan with ${userOneTransactions.length} transactions.`);
+        console.log(`Created User User1 with ${userOneTransactions.length} transactions.`);
         
         // --- Create User 2: Priya (1 Month of Data) ---
-        const userTwo = new User({ name: 'Priya', email: 'priya@example.com' });
+        const userTwo = new User({ name: 'User2', email: 'User2@example.com' });
         await userTwo.save();
         const userTwoTransactions = generateTransactions(userTwo._id, 1);
         await Transaction.insertMany(userTwoTransactions);
-        console.log(`Created User Priya with ${userTwoTransactions.length} transactions.`);
+        console.log(`Created User User2 with ${userTwoTransactions.length} transactions.`);
 
         console.log('Database seeded successfully!');
     } catch (err) {
